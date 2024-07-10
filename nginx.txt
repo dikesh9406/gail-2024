@@ -1,0 +1,23 @@
+npm run install-dependencies
+npm start
+
+bivash@bivash-HP-Z240-Tower-Workstation:~/Desktop/gail_project_4(athother_copy)$ 
+
+sudo systemctl start mongod
+
+sudo apt-get update
+
+ cd client/
+
+npm run build
+
+cd ..
+
+sudo systemctl reload nginx
+
+pm2 restart server.js 
+or
+pm2 start server.js
+
+
+

@@ -1,0 +1,54 @@
+.motor-info {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5vh 5vw;
+  /* margin: 0x 10vw; */
+}
+
+.motor-info h1 {
+  
+  
+  /* padding: 5px 10px; */
+  border-radius: 5px;
+  margin: 20px 0px;
+  text-align: left;
+  
+}
+.subheading, .content {
+  margin: 10px px;
+  
+}
+.subheading2, .content {
+  margin: 10px px;
+  
+}
+.motor-info h1, .motor-info p {
+  margin: 10px px;
+  
+}
+
+.motor-info img {
+  margin: 20px 0px;
+  transition: 0.5s;
+  
+}
+
+.motor-info img:hover {
+  transform: scale(1.1);
+}
+.highlight-box {
+  margin: 20px; /* Light gray background color */
+  padding: 10px; /* Adjust padding as needed */
+  border: 2px solid #999; /* Gray border */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Ensure the box wraps around the text */
+  transition: 0.5s;
+  
+}
+.highlight-box:hover{
+  transform: scale(1.1);
+}
+.title{
+  text-align: right;
+}

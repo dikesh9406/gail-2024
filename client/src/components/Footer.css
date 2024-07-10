@@ -1,0 +1,130 @@
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+  }
+  
+  .footer-top {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .social-networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+  
+  .footer-main {
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    width: auto;
+    margin-bottom: 1.5rem;
+}
+
+ 
+  
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer-link {
+    color: #6c757d;
+    text-decoration: none;
+    
+  }
+  
+  .footer-bottom {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Ensures that the text within the p tag is centered */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom a {
+    font-weight: bold;
+    color: #7b848b;
+    text-decoration: none;
+  }
+  
+  /* Add FontAwesome icons for social media */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-top {
+      text-align: center;
+    }
+    
+    .social-networks {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .row {
+      flex-direction: column;
+    }
+    
+    .col {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-main {
+      padding: 1rem 0;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+    
+    .footer-bottom p, .footer-bottom a {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

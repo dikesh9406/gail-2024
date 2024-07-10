@@ -1,0 +1,36 @@
+#
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # include snippets/snakeoil.conf;
+
+        root /var/www/html;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name cgf.iitkgp.ac.in www.cgf.iitkgp.ac.in;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                root /home/bivash/Desktop/gail_project_4/client/build;
+
+
+                try_files $uri /index.html;
+        }
+   location /api/ {
+                proxy_pass http://localhost:5000;
+
+proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+          }
+
+        #}
+}
+
+

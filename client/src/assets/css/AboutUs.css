@@ -1,0 +1,22 @@
+/* AboutUs.css */
+
+.image-section {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sample-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  .text-section {
+    margin-bottom: 20px;
+  }
+  
